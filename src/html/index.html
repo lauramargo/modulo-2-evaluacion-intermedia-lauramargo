@@ -1,20 +1,29 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Adalab Web Starter Kit</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./assets/css/main.css" />
-    <link rel="icon" href="./assets/images/favicon.png" />
-  </head>
 
-  <body>
-    <div class="page">
-      <include src="./partials/header.html" title="Bienvenidos a Adalab"></include>
-      <include src="./partials/main.html"></include>
-      <include src="./partials/footer.html"></include>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>evaluacion intermedia modulo 2</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/css/main.css" />
+  <link rel="icon" href="./assets/images/favicon.png" />
+</head>
+
+<body>
+  <main>
+    <div>
+      <h1 class="h1 js-h1">Adivina el número</h1>
+      <h2 class="h2 js-h2">Introduce aqui tu número</h2>
+      <p class="p-main js-main"></p>
     </div>
-    <script src="./assets/js/main.js"></script>
-  </body>
+    <div>
+      <button class="btn js-btn">Prueba</button>
+      <p class="p-clue js-clue" placeholder="Pista: Escribe el número y dale a Prueba"></p>
+      <p class="p-try js-try" placeholder="Número de intentos:0"></p>
+    </div>
+  </main>
+  <script src="./assets/js/main.js"></script>
+</body>
+
 </html>
