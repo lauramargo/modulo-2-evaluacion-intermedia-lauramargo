@@ -26,7 +26,14 @@ const changeText = () => {
         pClue.innerHTML = 'demasiado alto'
 
     }
+
+
 };
+const count_click = 0;
+function count_click_add() {
+    count_click += 1;
+    pTry.innerHTML = count_click += 1;
+}
 
 
 function updateWrite() {
