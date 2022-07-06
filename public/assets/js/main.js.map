@@ -1,1 +1,1 @@
-{"version":3,"sources":["main.js"],"names":[],"mappings":"AAAA;AACA;AACA;AACA","file":"main.js","sourcesContent":["'use strict';\n\nconsole.log('>> Ready :)');\n"]}
+{"version":3,"sources":["main.js"],"names":[],"mappings":"AAAA;AACA;AACA;AACA;AACA;AACA;AACA","file":"main.js","sourcesContent":["'use strict';\n\nconst write = document.querySelector(\"js-main\")\nconst btnTest = document.querySelector(\"js-btn\")\nconst pClue = document.querySelector(\"js-clue\")\nconst pTry = document.querySelector(\"js-try\")\n"]}
