@@ -27,15 +27,7 @@ const changeText = () => {
 
     }
 };
-function updateTry() {
-    const tryValue = pTry.value;
-    pTry.innerHTML = tryValue;
-}
 
-function updateClue() {
-    const clueValue = pClue.value;
-    pClue.innerHTML = clueValue;
-}
 
 function updateWrite() {
     const writeValue = write.value;
