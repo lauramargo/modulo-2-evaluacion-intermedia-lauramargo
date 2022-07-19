@@ -12,17 +12,16 @@
 
 <body>
   <main>
-    <div>
+    <form>
       <h1 class="h1 js-h1">Adivina el número</h1>
       <h2 class="h2 js-h2">Introduce aqui tu número</h2>
+      <input class="p-main js-main" type="text">
 
-      <p></p> <input class="p-main js-main" type="text">
-    </div>
+    </form>
+    <button class="btn js-btn">Prueba</button>
     <div>
-      <button class="btn js-btn">Prueba</button>
-
-      <p class="p-clue js-clue"> "Pista: Escribe el número y dale a Prueba"</p>
-      <p class="p-try js-try">"Número de intentos:0"</p>
+      <p class="p-clue js-clue">Escribe el número y dale a Prueba</p>
+      <p class="js-try">Número de intentos: <span class="js-tryNumber">0</span></p>
     </div>
   </main>
   <script src="./assets/js/main.js"></script>

@@ -3,52 +3,46 @@
 const write = document.querySelector(".js-main")
 const btnTest = document.querySelector(".js-btn")
 const pClue = document.querySelector(".js-clue")
-const pTry = document.querySelector(".js-try")
+const pTry = document.querySelector(".js-tryNumber")
 
-const randomNumber = getRandomNumber(100);
+
 
 function getRandomNumber(max) {
     return Math.ceil(Math.random() * max);
-
-};
-const changeText = () => {
-
-    console.log(randomNumber);
-    if (randomNumber === updateWrite()) {
-        pClue.innerHTML = 'has ganado campeona'
-
-    }
-    else if (updateWrite() < randomNumber) {
-        pClue.innerHTML = 'demasiado bajo'
-
-    }
-    else if (updateWrite() > randomNumber) {
-        pClue.innerHTML = 'demasiado alto'
-
-    }
-
-
-};
-const count_click = 0;
-function count_click_add() {
-    count_click += 1;
-    pTry.innerHTML = count_click += 1;
 }
 
+function compareNumber() {
+    const writeValue = parseInt(write.value);
 
-function updateWrite() {
-    const writeValue = write.value;
-    return writeValue;
+    if (randomNumber === writeValue) {
+        pClue.innerHTML = 'Has ganado campeona'
+
+    }
+    else if (writeValue < randomNumber) {
+        pClue.innerHTML = 'Demasiado bajo'
+
+    }
+    else {
+        pClue.innerHTML = 'Demasiado alto'
+
+    }
+}
+
+function countNumberTry() {
+    counterTry = counterTry + 1;
+    pTry.innerHTML = counterTry
 }
 
 function handleClick(ev) {
     ev.preventDefault();
-    updateWrite();
-    updateTry();
-    updateClue();
-    changeText();
+
+    compareNumber();
+    countNumberTry();
 
 }
-
+let counterTry = 0
+const randomNumber = getRandomNumber(100);
+console.log(randomNumber);
 btnTest.addEventListener('click', handleClick);
+
 //# sourceMappingURL=main.js.map
